@@ -1,0 +1,45 @@
+header{
+    background-color: #f9db79;
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+
+}
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.topo nav{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topo img{
+    width: auto;
+    height: 60px;
+}
+
+.link-navegacao{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+@media screen and (max-width: 450px) {
+    .topo{
+        flex-direction: column;
+
+    }
+    .topo nav{
+        border-top: solid 1px #808080;
+        justify-content: space-around;
+        padding-top: 10px;
+        width: 100%;
+    }
+}

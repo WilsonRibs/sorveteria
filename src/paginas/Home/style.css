@@ -1,0 +1,102 @@
+.secao-banner{
+    background-image: url('/public/assets/banner-home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f9db79;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.secao-banner h1{
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 5px;
+    
+}
+.box-cards-1,
+.box-cards-2,
+.box-cards-3{
+    display: flex;   
+
+}
+.box-cards-1 div,
+.box-cards-2 div,
+.box-cards-3 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+        
+}
+.box-cards-1 img,
+.box-cards-2 img,
+.box-cards-3 img{
+    width: 50%;
+    object-fit: cover;
+    height: auto;
+}
+.box-cards-1 h2,
+.box-cards-2 h2,
+.box-cards-3 h2{
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.box-cards-1 span,
+.box-cards-2 span,
+.box-cards-3 span{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.box-cards-1 p,
+.box-cards-2 p,
+.box-cards-3 p{
+    margin: 40px 100px;
+    font-size: 14px;
+    line-height: 26px;
+}
+@media screen and (max-width: 1024px) {
+    .secao-banner h1{
+        font-size: 80px;
+    }
+
+    
+}
+@media screen and (max-width: 768px){
+    .secao-banner h1{
+        font-size: 60px;
+    
+    }
+    .box-cards-1,.box-cards-3 {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .box-cards-1 img,.box-cards-1 div, 
+    .box-cards-2 img,.box-cards-2 div,
+    .box-cards-3 img,.box-cards-3 div{
+        width: 100%;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+   .box-cards-2{
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+
+}
+@media screen and (max-width: 436px){
+    .secao-banner h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+}

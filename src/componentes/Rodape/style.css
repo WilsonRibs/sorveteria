@@ -1,0 +1,39 @@
+.rodape{
+    background-color: #000000;
+    color: #fff;
+    
+}
+.contato{
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 100px 200px;
+}
+.contato div{
+    width: 20%;
+}
+.contato img{
+    width: 100px;
+}
+.contato p{
+    font-size: 16px;
+    
+}
+.contato-dev{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px){
+    .contato{
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+    }
+    .contato div{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
